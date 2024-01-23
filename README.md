@@ -26,7 +26,11 @@ These datasets include:
 
 **Population**
 
-**Shelters**
+**Police**
+
+**Fire Stations**
+
+**Hospitals**
 
 Auxiliary Datasets: A **Cities** dataset with related FIPS and Zip Codes
 
