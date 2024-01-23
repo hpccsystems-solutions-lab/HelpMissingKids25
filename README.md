@@ -1,5 +1,5 @@
-# ADAM2024Challenge
-Welcome to the ADAM2024 HPCC Systems and ECL Code Challenge!
+# Help Missing Kids! 
+Welcome to the2024 HPCC Systems and ECL Code Challenge, titled "Help Missing Kids"!
 
 ## Introduction
 1000 Children go missing every day in the United States. 1 in 6 become victims of human trafficking.
