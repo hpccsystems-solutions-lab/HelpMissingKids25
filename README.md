@@ -32,9 +32,11 @@ These datasets include:
 
 **Hospitals**
 
-Auxiliary Datasets: A **Cities** dataset with related FIPS and Zip Codes
+Auxiliary Datasets: 
 
-More to come...
+A **Cities** dataset with related FIPS and Zip Codes (used for linking the above datasets to the NCMEC data)
+
+You are not limited to usiong these datasets! Extra credit will be rewarded by linking other pertinent data!  
 
 
 
