@@ -36,7 +36,7 @@ Auxiliary Datasets:
 
 A **Cities** dataset with related FIPS and Zip Codes (used for linking the above datasets to the NCMEC data)
 
-You are not limited to usiong these datasets! Extra credit will be rewarded by linking other pertinent data!  
+You are not limited to using these datasets! Extra credit will be rewarded by linking other pertinent data!  
 
 
 
