@@ -1,5 +1,5 @@
 # Help Missing Kids! 
-Welcome to the2024 HPCC Systems and ECL Code Challenge, titled "Help Missing Kids"!
+Welcome to the 2024 HPCC Systems and ECL Code Challenge, titled "Help Missing Kids"!
 
 ## Introduction
 1000 Children go missing every day in the United States. 1 in 6 become victims of human trafficking.
@@ -10,7 +10,7 @@ What can we do as developers to help understand this problem, and what can we do
 
 ## The Challenge
 Your challenge is to analyze different social factors such as poverty, unemployment, and other factors and develop insights and additional information for the first reponders.
-**
+
 ## The Data
 NCMEC Data has been collected from all 50 states and organized into a simple dataset to use as your central source.
 
