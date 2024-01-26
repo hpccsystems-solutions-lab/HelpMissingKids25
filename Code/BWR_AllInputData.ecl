@@ -1,12 +1,15 @@
 ﻿IMPORT $;
-AD := $.File_AllData;
+HMK := $.File_AllData;
 
-OUTPUT(AD.unemp_ratesDS,NAMED('US_UnempByMonth'));
-OUTPUT(AD.unemp_byCountyDS,NAMED('Unemployment'));
-OUTPUT(AD.EducationDS,NAMED('Education'));
-OUTPUT(AD.pov_estimatesDS,NAMED('poverty'));
-OUTPUT(AD.pop_estimatesDS,NAMED('Population'));
-OUTPUT(AD.ShelterDS,NAMED('Shelters'));
-OUTPUT(AD.mc_byStateDS,NAMED('NCMEC'));
-OUTPUT(AD.City_DB,NAMED('Cities'));
-OUTPUT(COUNT(AD.City_DB),NAMED('Cities_Cnt'));
+OUTPUT(HMK.unemp_ratesDS,NAMED('US_UnempByMonth'));
+OUTPUT(HMK.unemp_byCountyDS,NAMED('Unemployment'));
+OUTPUT(HMK.EducationDS,NAMED('Education'));
+OUTPUT(HMK.pov_estimatesDS,NAMED('Poverty'));
+OUTPUT(HMK.pop_estimatesDS,NAMED('Population'));
+OUTPUT(HMK.PoliceDS,NAMED('Police'));
+OUTPUT(HMK.FireDS,NAMED('Fire'));
+OUTPUT(HMK.HospitalDS,NAMED('Hospitals'));
+OUTPUT(HMK.mc_byStateDS,NAMED('NCMEC'));
+OUTPUT(COUNT(HMK.mc_byStateDS),NAMED('NCMEC_Cnt'));
+OUTPUT(HMK.City_DS,NAMED('Cities'));
+OUTPUT(COUNT(HMK.City_DS),NAMED('Cities_Cnt'));
