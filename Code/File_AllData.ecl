@@ -233,4 +233,87 @@ END;
 
 EXPORT City_DS := DATASET('~hmk::uscities',citiesrec,CSV(HEADING(1)));
 
+//MORE DATA FROM Homeland Infrastructure Foundation-Level Data (HIFLD)
+// https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::all-places-of-worship/explore
+//Places of Worship
+
+EXPORT ChurchRec := RECORD
+    UNSIGNED3 ___objectid;
+    UNSIGNED5 ein;
+    STRING70 name;
+    STRING35 street;
+    STRING22 city;
+    STRING2 state;
+    UNSIGNED3 zip;
+    UNSIGNED1 affiliation;
+    UNSIGNED3 ruling;
+    UNSIGNED1 foundation;
+    UNSIGNED5 activity;
+    UNSIGNED1 organization;
+    UNSIGNED3 tax_period;
+    UNSIGNED1 acct_pd;
+    STRING13 ntee_cd;
+    STRING13 sort_name;
+    STRING13 loc_name;
+    STRING1 geocoded_status;
+    REAL8 score;
+    STRING1 match_type;
+    STRING75 match_addr;
+    STRING13 addr_type;
+    STRING13 addnum;
+    STRING13 side;
+    STRING13 stpredir;
+    STRING19 stpretype;
+    STRING29 stname;
+    STRING13 sttype;
+    STRING13 stdir;
+    STRING37 staddr;
+    STRING30 city_2;
+    STRING23 subregion;
+    STRING20 region;
+    STRING13 regionabbr;
+    STRING13 postal;
+    STRING3 country;
+    STRING13 langcode;
+    UNSIGNED1 distance;
+    REAL8 x;
+    REAL8 y;
+    REAL8 displayx;
+    REAL8 displayy;
+    REAL8 xmin;
+    REAL8 xmax;
+    REAL8 ymin;
+    REAL8 ymax;
+    STRING13 addnumfrom;
+    STRING13 addnumto;
+    STRING13 rank;
+    STRING35 arc_address;
+    STRING22 arc_city;
+    STRING2 arc_region;
+    UNSIGNED3 arc_postal;
+END;
+
+EXPORT ChurchDS := DATASET('~hmk::in::churches',churchrec,CSV(HEADING(1)));
+
+//FEMA: 
+//https://gis-fema.hub.arcgis.com/datasets/da001dee68474719b934a166f7abdc46/explore
+//Food banks
+EXPORT FoodBankRec := RECORD
+    REAL8 ___x;
+    REAL8 y;
+    UNSIGNED1 fema_region;
+    STRING63 food_bank_name;
+    UNSIGNED2 member_number;
+    STRING42 address;
+    STRING16 city;
+    STRING2 state;
+    STRING10 zip_code;
+    STRING60 web_page;
+    STRING100 facebook_page;
+    UNSIGNED2 fid;
+    STRING11 status;
+    STRING36 globalid;
+END;
+
+EXPORT FoodBankDS := DATASET('~hmk::in::foodbanks',foodbankrec,CSV(HEADING(1)));
 END;

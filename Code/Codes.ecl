@@ -1,5 +1,4 @@
-﻿// Code Translations for the poverty dataset
-// POVALL_2021	Estimate of people of all ages in poverty 2021
+﻿// POVALL_2021	Estimate of people of all ages in poverty 2021
 // CI90LBALL_2021	90 percent confidence interval lower bound of estimate of people of all ages in poverty 2021
 // CI90UBALL_2021	90 percent confidence interval upper bound of estimate of people of all ages in poverty 2021
 // PCTPOVALL_2021	Estimated percent of people of all ages in poverty 2021
@@ -26,4 +25,3 @@
 // PCTPOV04_2021	Estimated percent of children ages 0 to 4 in poverty 2021 (available for the U.S. and State total only)
 // CI90LB04P_2021	90 percent confidence interval lower bound of estimate of percent of children ages 0 to 4 in poverty 2021 (available for the U.S. and State total only)
 // CI90UB04P_2021	90 percent confidence interval upper bound of estimate of percent of children ages 0 to 4 in poverty 2021 (available for the U.S. and State total only)
-OUTPUT('PovertyCodes');
