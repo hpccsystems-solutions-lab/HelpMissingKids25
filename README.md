@@ -11,6 +11,13 @@ What can we do as developers to help understand this problem, and what can we do
 ## The Challenge
 Your challenge is to analyze different social factors such as poverty, unemployment, and other factors and develop insights and additional information for the first reponders.
 
+The goal of the challenge is to answer two questions:
+
+1.	Is there a correlation between the locations that kids are reported missing and other social factors in that area (unemployment, education, poverty, and population).
+
+2.	Can we provide additional information to the NCMEC feed to help find the missing children? (fire and police stations, hospitals, churches, food banks, etc.)
+
+
 ## The Data
 **NCMEC Data** has been collected from all 50 states and organized into a simple dataset to use as your central source.
 
