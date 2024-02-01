@@ -77,13 +77,13 @@ For a quick start on ECL syntax, please visit the [Learn ECL](https://hpccsystem
 https://www.youtube.com/watch?time_continue=192&v=Lk78BCCtM-0
 
 - ECL documentation:
-http://cdn.hpccsystems.com/releases/CE-Candidate-9.4.4/docs/EN_US/ECLLanguageReference_EN_US-9.4.4-1.pdf
+http://cdn.hpccsystems.com/releases/CE-Candidate-9.4.30/docs/EN_US/ECLLanguageReference_EN_US-9.4.30-1.pdf
 
 - Visualization document:
-https://cdn.hpccsystems.com/releases/CE-Candidate-9.4.4/docs/EN_US/VisualizingECL_EN_US-9.4.4-1.pdf
+https://cdn.hpccsystems.com/releases/CE-Candidate-9.4.30/docs/EN_US/VisualizingECL_EN_US-9.4.30-1.pdf
 
 - Standard Library:
-https://cdn.hpccsystems.com/releases/CE-Candidate-9.4.4/docs/EN_US/ECLStandardLibraryReference_EN_US-9.4.4-1.pdf
+https://cdn.hpccsystems.com/releases/CE-Candidate-9.4.30/docs/EN_US/ECLStandardLibraryReference_EN_US-9.4.30-1.pdf
 
 - Machine Learning:
 https://hpccsystems.com/download/free-modules/machine-learning-library
@@ -91,15 +91,14 @@ https://hpccsystems.com/download/free-modules/machine-learning-library
 
 ## Challenge Expectation
 
-Judges will consider followings during final presentation:
+Judges will consider the criteria during final presentation:
 
-- Problem that was chosen (What categories and datasets were selected)
-- How you approached the solution
-- Display results (ROXIE or Visualization)- please reference pertinent ECL workunits with submission 
-- Drawing conclusion (Where is your Paradise?)
-- Demo of work via a PowerPoint presentation or live demo
-
-Data points will be created for each category, sorted by US State or by County. The product should be able to allow selection of one or all categories, and then weigh each category in order of importance. Based on the weight, a score will be generated for each category selected and a "Top 10" list of States with their weighed scores will be displayed.
+- How did you answer the challenge questions?
+- How did you approach the solution?
+- What datasets did you use? Did you incorporate any new datasets into the challenge?
+- How you presented your results (via ROXIE,Visualization or other medium)- please reference pertinent ECL workunits with submission 
+- Drawing conclusions (How did we help find missing children?)
+- Demo of work via a PowerPoint presentation or live demo by your team
 
 ## Tips for a Great Score
 
