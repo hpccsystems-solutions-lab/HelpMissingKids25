@@ -1,5 +1,5 @@
 # Help Missing Kids! 
-Welcome to the 2024 HPCC Systems and ECL Code Challenge, titled "Help Missing Kids"!
+Welcome to the 2025 HPCC Systems and ECL Code Challenge, titled "Help Missing Kids"!
 
 ## Introduction
 1000 Children go missing every day in the United States. 1 in 6 become victims of human trafficking.
@@ -65,7 +65,7 @@ PDFs in the Docs folder of this repository can be found to guide you through the
 Download QuickStart.mod located in this repository's root folder. This file has the initial code you need for this challenge. 
 The import process will be discussed at the Workshops, but in both IDEs simply open the MOD file and follow the prompts. CTRL+O in the ECL IDE, and the F1 key in VS-Code will pop up the command dialog, and look for the "ECL: Import 'mod' file" command. 
 
-If you need more information on the ECL jobs you are running please use [ECL Watch Page](http://training.us-hpccsystems-dev.azure.lnrsg.io:8010/)
+If you need more information on the ECL jobs you are running please use [ECL Watch Page](http://challenge.us-hpccsystems-dev.azure.lnrsg.io:8010/)
 
 **Note: This cluster will only be active during the event!** After the event, you can create your own localized container cluster, or visit our public "Play" Cluster: (https://play.hpccsystems.com:18010) 
 
@@ -77,13 +77,13 @@ For a quick start on ECL syntax, please visit the [Learn ECL](https://hpccsystem
 https://www.youtube.com/watch?time_continue=192&v=Lk78BCCtM-0
 
 - ECL documentation:
-http://cdn.hpccsystems.com/releases/CE-Candidate-9.4.30/docs/EN_US/ECLLanguageReference_EN_US-9.4.30-1.pdf
+http://cdn.hpccsystems.com/releases/CE-Candidate-9.10.14/docs/EN_US/ECLLanguageReference_EN_US-9.10.14-2.pdf
 
 - Visualization document:
-https://cdn.hpccsystems.com/releases/CE-Candidate-9.4.30/docs/EN_US/VisualizingECL_EN_US-9.4.30-1.pdf
+https://cdn.hpccsystems.com/releases/CE-Candidate-9.10.14/docs/EN_US/VisualizingECL_EN_US-9.10.14-2.pdf
 
 - Standard Library:
-https://cdn.hpccsystems.com/releases/CE-Candidate-9.4.30/docs/EN_US/ECLStandardLibraryReference_EN_US-9.4.30-1.pdf
+https://cdn.hpccsystems.com/releases/CE-Candidate-9.10.14/docs/EN_US/ECLStandardLibraryReference_EN_US-9.10.14-2.pdf
 
 - Machine Learning:
 https://hpccsystems.com/download/free-modules/machine-learning-library
@@ -113,32 +113,28 @@ Judges will consider the following criteria during final presentation:
 
 <div class="mentors">
 <div>
-<img src="./Images/Richard.jpg" alt="Richard Taylor" width="150" height="100" />
-<p><a href = "mailto: richard.taylor@lexisnexisrisk.com">Richard Taylor</a> is the Chief Trainer at LexisNexis and an ECL Master for the past 20 years. He is also the original member of the Documentation Team.</p>
-</div>
-<div>
 <img src="./Images/Bob.png" alt="Bob Foreman" width="100" height="100" />
-<p><a href = "mailto: robert.foreman@lexisnexisrisk.com">Bob Foreman</a> has been an ECL Trainer for the past 12 years, and has been a Technology Teacher for longer than he wants to admit. He will be your primary onsite contact regarding all ECL related questions during this event.</p>
+<p><a href = "mailto: robert.foreman@lexisnexisrisk.com">Bob Foreman</a> has been an ECL Trainer for the past 14 years, and has been a Technology Teacher for longer than he wants to admit. He will be your primary onsite contact regarding all ECL related questions during this event.</p>
 </div>
 
 <div>
 <img src="./Images/George.png" alt="George Foreman" width="100" />
-<p><a href = "mailto: george.foreman@lexisnexisrisk.com">George Foreman</a> is our HPCC Systems Product Specialist and Technical Writer. He will be available onsite to help you with locating the resources you need during this event.</p>
+<p><a href = "mailto: george.foreman@lexisnexisrisk.com">George Foreman</a> is our HPCC Systems Product Specialist and Business Analyst. He will be available onsite to help you with locating the resources you need during this event.</p>
 </div>
 
 <div>
 <img src="./Images/Hugo.jpg" alt="Hugo Watanuki" width="100" />
-<p><a href = "mailto: hugo.watanuki@lexisnexisrisk.com">Hugo Watanuki</a> is responsible for the HPCC Systems Summer Internship Program. He will be available online in our slack channel to help you with ECL questions and resources you might need during this event.</p>
+<p><a href = "mailto: hugo.watanuki@lexisnexisrisk.com">Hugo Watanuki</a> is responsible for the HPCC Systems Summer Internship Program. He will be available online in our Teams channel to help you with ECL questions and resources you might need during this event.</p>
 </div>
 
 <div>
 <img src="./Images/MauroDM.jpg" alt="Mauro Marques" width="100" />
-<p><a href = "mailto: mauro.marques@lexisnexisrisk.com">Mauro Marques</a> is a Senior Technical Support Engineer at LexisNexis Risk Solutions, and supports the development and delivery of training programs for the HPCC Systems platform in the Brazil region. He will also be available online in our slack channel to help you with ECL questions and resources you might need during this event.</p>
+<p><a href = "mailto: mauro.marques@lexisnexisrisk.com">Mauro Marques</a> is a Senior Technical Support Engineer at LexisNexis Risk Solutions, and supports the development and delivery of training programs for the HPCC Systems platform in the Brazil region. He will also be available online in our Teams channel to help you with ECL questions and resources you might need during this event.</p>
 </div>
 
 <div>
 <img src="./Images/Alysson.png" alt="Alysson Oliveira" width="100" />
-<p><a href = "mailto: alysson.oliveira@lexisnexisrisk.com">Alysson Oliveira</a> is a Software Engineer at LexisNexis Risk Solutions. His main role revolves around support and development of training programs for HPCC Systems in Brazil , covering the academic audience, computing and data professionals and researchers. He also works to establish partnerships with universities to offer undergraduate students the opportunity to work on scientific projects. He will also be available online in our slack channel to help you with ECL questions and resources you might need during this event.</p>
+<p><a href = "mailto: alysson.oliveira@lexisnexisrisk.com">Alysson Oliveira</a> is a Software Engineer at LexisNexis Risk Solutions. His main role revolves around support and development of training programs for HPCC Systems in Brazil , covering the academic audience, computing and data professionals and researchers. He also works to establish partnerships with universities to offer undergraduate students the opportunity to work on scientific projects. He will also be available online in our Teams channel to help you with ECL questions and resources you might need during this event.</p>
 </div>
 <div></div>
 </div>
