@@ -85,7 +85,7 @@ END;
 EXPORT mc_byStateDS := DATASET('~hmk::IN::ncmecbystate',mc_byState,CSV(HEADING(1)));
 // EXPORT mc_byStateDS := DATASET('~HMK::EXPORT::NCMECByState2-2',mc_byState,CSV(HEADING(1)));
 
-//https://hifld-geoplatform.opendata.arcgis.com/datasets/
+//https://hifld-geoplatform.hub.arcgis.com/
 
 //Fire Stations
 //Available for public use. 
@@ -125,7 +125,6 @@ END;
 EXPORT FireDS := DATASET('~hmk::in::Fire',FireRec,CSV(HEADING(1)));
 
 //Local Law Enforcement Locations in US
-//https://hifld-geoplatform.opendata.arcgis.com/datasets/local-law-enforcement-locations/explore
 //License: None (Public Use). 
 //Users are advised to read the data set's metadata thoroughly to understand appropriate use and data limitations.
 EXPORT PoliceRec := RECORD
