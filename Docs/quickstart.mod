@@ -1,4 +1,232 @@
-﻿//Import:ecl:Code.BWR_AllInputData
+﻿//Import:ecl:Code.CrashCourse.BubbleEx
+//To run this example, you need to have the Visualization bundle installed.
+//See: https://github.com/hpcc-systems/Visualizer
+IMPORT Visualizer;
+
+GamesRec := RECORD
+    STRING Rank;
+    STRING Name;
+    STRING Platform;
+    STRING Year;
+    STRING Genre;
+    STRING Publisher;
+    STRING NA_Sales;
+    STRING EU_Sales;
+    STRING JP_Sales;
+    STRING Other_Sales;
+    STRING Global_Sales;
+END;
+
+Games_DS := DATASET('~tech::vgsales',GamesRec,CSV(HEADING(1)));
+top_sales_Count := TOPN(TABLE(Games_DS,{name,Global_Sales}),10,-Global_Sales);
+OUTPUT(top_sales_Count,NAMED('salescount'));
+Visualizer.TwoD.Bubble('global_count',,'salescount');
+//Import:ecl:Code.CrashCourse.FunctionEx
+myfunc (STRING val) := FUNCTION
+  Result := 'Hello ' + val + ' , welcome to this function';
+  RETURN Result;
+END;
+
+//Using myfunc
+res := myfunc('Trish');
+OUTPUT(res, NAMED('FunctionResult'));
+
+OUTPUT(myfunc('George'),NAMED('GeorgeTest'));
+
+//Single line function:
+MaxVal(SET OF INTEGER numlist) := MAX(numlist);
+OUTPUT(MaxVal([2,5,8,10,45,11]),NAMED('CheckMax'));
+//Import:ecl:Code.CrashCourse.InlineEx
+IMPORT $;
+
+SalaryAvg_Layout := RECORD 
+    STRING  Job;
+    STRING  Category;
+    STRING  City;
+    STRING2 State;
+    INTEGER Avg_Salary;
+END;
+
+//Inline Dataset
+SalaryAvg_DS := DATASET([
+{'Manager','IT', 'Atlanta', 'GA', 87000},
+{'Director','Art','Atlanta','GA',100000},
+{'CIO','IT','Tampa','FL',112000},
+{'Sales','General','Chicago','IL',55000}
+], SalaryAvg_Layout);
+
+// A simple output
+OUTPUT(SalaryAvg_DS,NAMED('SalaryAvg_DS'));
+
+//CHOOSEN
+OUTPUT(CHOOSEN(SalaryAvg_DS,2),NAMED('SalaryAvg_Choosen'));
+
+//Filter
+OUTPUT(SalaryAvg_DS(City = 'Tampa'),NAMED('Tampa_Filter'));
+
+//Sort
+SortJobs := SORT(SalaryAvg_DS, Job);
+OUTPUT(SortJobs, NAMED('SortJobs'));
+//Import:ecl:Code.CrashCourse.InlineTransformEx
+Person_Layout := RECORD
+  INTEGER PersonID;
+  STRING FirstName;
+  STRING LastName;
+END;
+
+NameDS := DATASET([
+                  {100,'Jo','Smith'},
+                  {203,'Dan','Carpenter'},
+                  {498,'Sally','Fryman'},
+                  {302,'Silver','Rose'}
+                  ],Person_Layout);
+
+NameOutRec := RECORD
+  UNSIGNED1 RecCount;
+  INTEGER   PersonID;
+  STRING    PersonName;
+  STRING    FutureAddress;
+END;                    
+
+CatRecs := PROJECT(nameDS, 
+                   TRANSFORM(NameOutRec,
+                     SELF.PersonName := LEFT.FirstName + ' ' + LEFT.LastName;
+                     SELF.RecCount   := COUNTER;
+                     SELF            := LEFT;
+                     SELF            := [];
+                   ));
+               
+OUTPUT(CatRecs, NAMED('Inline_CatRecs'));                   
+//Import:ecl:Code.CrashCourse.JOINEx
+EMP_Layout   := {INTEGER EmpID,STRING Name,INTEGER HireYear};
+JobCatLayout := {INTEGER EmpID,STRING Department,STRING Title};
+
+EmpDS := DATASET([
+                 {1000,'Jack',2014},
+                 {2000,'Blue',2016},
+                 {3000,'Mary',2016},
+                 {5000,'Marty',2000},
+                 {8000,'Cat',2002}
+                 ],EMP_Layout);
+
+JobCatDS := DATASET([
+                    {1000,'IT','Developer'},
+                    {2000,'Biz','Manager'},
+                    {4000,'Fin','Accountant'},
+                    {8000,'IT','Analyst'}
+                    ],JobCatLayout);
+
+InnerJoin := JOIN(EmpDS,JobCatDS,
+                  LEFT.EmpID=RIGHT.EmpID);
+
+LeftOuterJoin := JOIN(EmpDS,JobCatDS,
+                  LEFT.EmpID=RIGHT.EmpID,
+                  LEFT OUTER);
+
+FullOuterJoin := JOIN(EmpDS,JobCatDS,
+                  LEFT.EmpID=RIGHT.EmpID,
+                  FULL OUTER);
+
+OUTPUT(InnerJoin);
+OUTPUT(LeftOuterJoin);
+OUTPUT(FullOuterJoin);                                     
+//Import:ecl:Code.CrashCourse.MATHEx
+Mathlayout := RECORD
+  INTEGER Num1;
+  INTEGER Num2;
+  INTEGER Num3;
+END;
+
+DS := DATASET([
+                {20,45,34},
+                {909,56,45},
+                {30,-1,90}
+              ],MathLayout);
+
+COUNT(DS);               //Counts the number of records in the dataset -- Returns 3
+MAX(DS,Num1);            //Returns the maximum value on a field in the dataset -- Returns 909
+MIN(DS,Num2);            //Returns the minimum value on a field in the dataset -- Returns -1
+AVE(DS,Num1);            //Returns the average value on a field in the dataset -- Returns 319.6666666666667
+SUM(DS, Num1 + Num3);    //Returns the result of adding numbers together -- Returns 1128
+TRUNCATE(AVE(DS,Num1));  //Returns the interger portion of the real value. -- 319
+ROUND(3.45);             //Returns the rounded value -- Return 3
+ROUND(3.76);             //Returns the rounded value -- Return 4
+
+
+//Import:ecl:Code.CrashCourse.MyMod
+EXPORT myMod := MODULE
+ //Visible only by MyMod
+ SHARED x := 88;
+ SHARED y := 42;
+
+ //Visible by MyMod and externally
+ EXPORT See := 'This is how a module works';
+ EXPORT Res := Y * 2;
+END;
+//Import:ecl:Code.CrashCourse.RunMyMod
+IMPORT $;
+OUTPUT($.MyMod.See,NAMED('Message'));
+OUTPUT($.MyMod.Res,NAMED('Result'));
+
+
+//Import:ecl:Code.CrashCourse.TableEx
+Pickup_layout := RECORD
+  STRING10   pickup_date;
+  DECIMAL8_2 fare;
+  DECIMAL8_2 distance;
+END;
+
+Pickup_DS := DATASET([
+                     {'2015-01-01',25.10,5},
+                     {'2015-01-01',40.15,8},
+                     {'2015-01-02',30.10,6},
+                     {'2015-01-02',25.15,4}
+                     ], Pickup_Layout);
+
+crossTabLayout := RECORD
+  Pickup_DS.pickup_date;
+  avgFare := AVE(GROUP,Pickup_DS.fare);
+  totFare := SUM(GROUP,Pickup_DS.fare);
+END;
+
+crossTabDS := TABLE(Pickup_DS, // Input Dataset
+                    crossTabLayout,
+                    pickup_date);
+
+OUTPUT(crossTabDS, NAMED('crossTabs'));                    
+//Import:ecl:Code.CrashCourse.TransformEx
+Person_Layout := RECORD
+  STRING FirstName;
+  STRING LastName;
+END;
+
+NameDS := DATASET([
+                  {'Sun','Shine'},
+                  {'Blue','Moon'},
+                  {'Silver','Rose'}
+                  ],Person_Layout);
+
+NameOutRec := RECORD
+  STRING15  FirstName;
+  STRING15  LastName;
+  STRING15  CatValues;
+  UNSIGNED1 RecCount;
+END;                    
+
+NameOutRec CatThem(Person_Layout Le,INTEGER Ct) := TRANSFORM
+  SELF.CatValues := TRIM(Le.FirstName) + ' ' + Le.LastName;
+  SELF.RecCount  := Ct;
+  SELF           := Le;
+END;
+
+CatRecs := PROJECT(nameDS, //dataset to loop through
+                   CatThem //Transform name
+                   (LEFT,  //Left dataset which is nameDS
+                   COUNTER //Simple Counter
+                   ));
+
+OUTPUT(CatRecs, NAMED('CatRecs'));                   
+//Import:ecl:Code.BWR_AllInputData
 IMPORT $;
 HMK := $.File_AllData;
 
