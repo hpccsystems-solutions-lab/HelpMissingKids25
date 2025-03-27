@@ -133,7 +133,7 @@ Send an email to us at hackathons@hpccsystems.com
 
 <div>
 <img src="./Images/Hugo.jpg" alt="Hugo Watanuki" width="100" />
-<p><a href = "mailto: hugo.watanuki@lexisnexisrisk.com">Hugo Watanuki</a> is responsible for the HPCC Systems Summer Internship Program. He will be available online in our Teams channel to help you with ECL questions and resources you might need during this event.</p>
+<p><a href = "mailto: hugo.watanuki@lexisnexisrisk.com">Hugo Watanuki</a> will be available online in our Teams channel to help you with ECL questions and resources you might need during this event.</p>
 </div>
 
 <div>
