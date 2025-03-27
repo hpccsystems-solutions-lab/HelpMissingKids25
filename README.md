@@ -100,12 +100,12 @@ Judges will consider the following criteria during final presentation:
 - Drawing conclusions (How did we help find missing children?)
 - Demo of work via a PowerPoint presentation or live demo by your team
 
-## Submission Information
+## Submission Instructions
 
 Send an email to us at hackathons@hpccsystems.com
 - Include your team name and the ECL Workunit names that contain your ECL work (Example: W20250327-133008)
 - No ECL workunits will be accepted after 10 A.M. on Saturday (March 29th)
-- Upload any documents (PDF,PowerPoint, MP4) directly to the Challenge Cluster Landing Zone, and then include the name in your email to us.
+- Upload any supporting documents describing your work (PDF,PowerPoint, MP4) directly to the Challenge Cluster Landing Zone, and then include the name in your email to us.
 - If the document is small (under 1MB) you can also attach it to your email instead of uploading to the Landing Zone.
 - We look forward to your submissions! Thank You!
 
