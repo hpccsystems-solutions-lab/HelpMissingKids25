@@ -107,7 +107,7 @@ Send an email to us at hackathons@hpccsystems.com
 - No ECL workunits will be accepted after 10 A.M. on Sunday (March 30th)
 - Upload any documents (PDF,PowerPoint, MP4) directly to the Challenge Cluster Landing Zone, and then include the name in your email to us.
 - If the document is small (under 1MB) you can also attach it to your email instead of uploading to the Landing Zone.
-- We look forwrd to your submissions! Thank You!
+- We look forward to your submissions! Thank You!
 
 ## Tips for a Great Score
 
