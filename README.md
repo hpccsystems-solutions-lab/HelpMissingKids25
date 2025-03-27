@@ -100,6 +100,15 @@ Judges will consider the following criteria during final presentation:
 - Drawing conclusions (How did we help find missing children?)
 - Demo of work via a PowerPoint presentation or live demo by your team
 
+## Submission Information
+
+Send an email to us at hackathons@hpccsystems.com
+- Include your team name and the ECL Workunit names that contain your ECL work (Example: W20250327-133008)
+- No ECL workunits will be accepted after 10 A.M. on Sunday (March 30th)
+- Upload any documents (PDF,PowerPoint, MP4) directly to the Challenge Cluster Landing Zone, and then include the name in your email to us.
+- If the document is small (under 1MB) you can also attach it to your email instead of uploading to the Landing Zone.
+- We look forwrd to your submissions! Thank You!
+
 ## Tips for a Great Score
 
 - Since your solution is the key part to this challenge you can use "#OPTION('obfuscateOutput', TRUE);" at the start of your code to hide it from being viewed on ECL Watchpage. If you decide to use #OPTION make sure to remove if from the WUID that you shared with the judges. When obfuscateOutput set to true, details are removed from the generated workunit, including ECL code, estimates of record size, and number of records.
